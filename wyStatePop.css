@@ -1,0 +1,49 @@
+svg {
+	font: 10px sans-serif;
+}
+.caption {
+	font-weight: bold;
+}
+
+.key path {
+  	display: none;
+}
+
+.key line {
+  	stroke: #000;
+  	shape-rendering: crispEdges;
+}
+		
+.county-border {
+  	fill: none;
+  	stroke: #000;
+  	stroke-opacity: .1;
+}
+
+.state-border {
+  	fill: none;
+  	stroke: #000;
+  	stroke-opacity: .7;
+}
+
+.tract {
+	stroke-opacity: 0;
+	stroke: #000;
+}
+		
+h1 {
+	font-weight: bold;
+	font-size: 46px;
+	display: absolute;
+}
+		
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
