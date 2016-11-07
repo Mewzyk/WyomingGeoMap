@@ -104,7 +104,7 @@ function initSvg(toggleColor){
 	Text to act as a button to toggle the census boundries.
 	*/
 	svg.append("text")
-		.attr("transform", "translate(800,50)")
+		.attr("transform", "translate(760,50)")
 		.text("- State Boundries")
 		.attr("font-size", "1.5em")
 		.classed("census", true)
