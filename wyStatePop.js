@@ -2,6 +2,7 @@
 Global variable used to track the state of the color scheme.
 */
 var toggleBorders = true;
+var toggleState = true;
 initSvg(true);
 
 function initSvg(toggleColor){
