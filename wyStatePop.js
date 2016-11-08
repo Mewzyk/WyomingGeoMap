@@ -2,8 +2,7 @@
 Global variable used to track the state of the color scheme.
 */
 var toggleBorders = true;
-var toggleState = true;
-initSvg(true, true);
+initSvg(true);
 
 function initSvg(toggleColor){
 	/*
@@ -111,12 +110,12 @@ function initSvg(toggleColor){
 		.on("click", function(){
 			if(toggleState){
 				d3.selectAll('.state-border')
-					.style('stroke-opacity', '0');
+					.style('stroke-opacity', '0.7');
 					toggleState = !toggleState;
 			}
 			else{
 				d3.selectAll('.state-border')
-					.style('stroke-opacity', '0.7');
+					.style('stroke-opacity', '0');
 				toggleState = !toggleState;
 			}
 		});
