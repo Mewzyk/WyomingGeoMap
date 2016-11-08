@@ -104,7 +104,7 @@ function initSvg(toggleColor){
 	Text to act as a button to toggle the census boundries.
 	*/
 	svg.append("text")
-		.attr("transform", "translate(760,50)")
+		.attr("transform", "translate(775,50)")
 		.text("- State Boundries")
 		.attr("font-size", "1.5em")
 		.classed("census", true)
@@ -196,7 +196,7 @@ function getScheme(toggleColor){
 		toggleColor = false;
 	}
 	else{
-		return ['#fff7ec', '#EAC6DE', '#D597BF', '#cc6dab', '#cc6dab', '#9d407c', '#6D415E', '#4D1238', '#310321', '#180110'];
+		return ['#fff7ec', '#fee8c8', '#99CC99', '#73A481', '#4D7C69', '#4D7C69', '#265350', '#002B38', '#002B59'];
 		toggleColor = true;
 	}
 }
