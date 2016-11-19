@@ -184,6 +184,7 @@ function initSvg(toggleColor){
 	});
 			
 		d3.select(self.frameElement).style("height", height + "px");
+		
 }
 
 /*
@@ -196,7 +197,7 @@ function getScheme(toggleColor){
 		toggleColor = false;
 	}
 	else{
-		return ['#fff7ec', '#fee8c8', '#99CC99', '#73A481', '#4D7C69', '#4D7C69', '#265350', '#002B38', '#002B59'];
+		return ["fcfbfd", "#f2f0f7", "#dadaeb", "#bcbddc", "#9e9ac8", "#807dba", "#6a51a3", "#4a1486", "#3f007d"];
 		toggleColor = true;
 	}
 }
