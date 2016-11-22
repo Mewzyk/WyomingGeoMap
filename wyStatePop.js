@@ -3,6 +3,8 @@ Global variable used to track the state of the color scheme.
 */
 var toggleBorders = true;
 var toggleState = true;
+var sig = ['Stephen Thomas', 'Instructor: Suresh Lodha', 'CMPS 165: Data programming for Visualization', 'Fall 2016'];
+
 initSvg(true);
 
 function initSvg(toggleColor){
@@ -13,6 +15,8 @@ function initSvg(toggleColor){
     	height = 1100;
 		
 	var formatNumber = d3.format(",d");
+	
+	d3.select('body').append('h1').text("Wyoming Population Density");
 	
 	/*
 	@projection: geoalbers projection centered around Wyoming
@@ -75,7 +79,7 @@ function initSvg(toggleColor){
 		.attr("font-size", "1.5em")
 		.classed("color", true)
 		.on("click", function(){
-			svg.remove();
+			document.body.innerHTML = '';
 			initSvg(!toggleColor);
 		});
 	
@@ -184,6 +188,12 @@ function initSvg(toggleColor){
 	});
 			
 		d3.select(self.frameElement).style("height", height + "px");
+		
+		d3.select('body').selectAll('p').data(sig).enter()
+			.append('p').text(function(d){
+			return d;
+			});
+	
 }
 
 /*
